@@ -1,0 +1,94 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="TermProject.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <%@ Register Src="~/UserControlTechSupport.ascx" TagPrefix="uc1" TagName="UserControlTechSupport" %>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="StyleSheet.css">
+    <style>
+        body {
+            margin: 0;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 25%;
+            background-color: #f1f1f1;
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+        }
+
+        li a {
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+            li a.active {
+                background-color: aqua;
+                color: white;
+            }
+
+            li a:hover:not(.active) {
+                background-color: #555;
+                color: white;
+            }
+    </style>
+
+
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <ul>
+            <div class="navbar-header" style="padding-top: 20px">
+                <img src="Image/Cloud Base Logo.png" style="width: 55%; height: 50%" />
+
+            </div>
+            <li><a class="active" href="#">
+                <h3>Cloud-Based Service</h3>
+            </a></li>
+            <li><a href="Login.aspx">User Login</a></li>
+            <li><a href="Login.aspx">Admin Management</a></li>
+            <li><a href="Super-AdminsCode.aspx">Super-Admins</a></li>          
+            <li><a href="Registration.aspx">Create an Account</a></li>
+            <li><a href="TechSupportHelp.aspx">Tech Support Help</a></li>
+            <li><a href="LogOut.aspx">Log Out</a></li>
+            <li><a href="Ajax.aspx">Advertisments</a></li>
+        </ul>
+
+        <div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-lg-offset-4">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </div>
+            </div>
+        </div>
+      <%--  <style>
+            h1 {
+                color: firebrick;
+            }
+            h2{
+                color: firebrick;
+            }
+        </style>--%>
+    </form>
+</body>
+</html>

@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="TermProject.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="TermProject_WS_TermProjectWS" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:6499/TermProjectWS.asmx</Value>
+    </Setting>
+    <Setting Name="TermProject_CloudWS_CloudService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:6499/CloudService.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
